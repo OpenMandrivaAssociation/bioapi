@@ -15,6 +15,7 @@ Patch0: bioapi-c++.patch.bz2
 License: BSD
 Group: Sciences/Other 
 Url: http://www.qrivy.net/~michael/blua/bioapi/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:       %{libname} = %{version}-%{release}, udev, qt3-common
 Buildrequires: qt3-devel
 
