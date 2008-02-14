@@ -34,7 +34,7 @@ is anticipated that porting it to other Unix-based platforms should be fairly
 straight-forward.
 
 %package -n %{libname}
-Summary:        bioapi libraries
+Summary:        Bioapi libraries
 Group:          System/Libraries
 Provides:       libbioapi
 
@@ -42,7 +42,7 @@ Provides:       libbioapi
 This package contains the bioapi libraries
 
 %package -n %{libname}-devel
-Summary:        bioapi Development files
+Summary:        Bioapi Development files
 Group:          Development/C
 Provides:       libbioapi-devel
 Requires:       %{libname} = %{version}-%{release}
