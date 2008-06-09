@@ -95,8 +95,12 @@ rm -rf $RPM_BUILD_ROOT
 # Reloading usb devices to apply udev rules to the fingerprint reader
 #find /sys/devices -name uevent | grep usb | while read u; do echo 1 > $u; done
 
+%if %mdkversion < 200900
 %post -n %{libname} -p /sbin/ldconfig
+%endif
+%if %mdkversion < 200900
 %postun -n %{libname} -p /sbin/ldconfig
+%endif
 
 %files
 %defattr(-,root,root)
