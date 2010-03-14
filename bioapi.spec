@@ -4,21 +4,21 @@
 %define major 2
 %define libname %mklibname %name %{major}
 
-Summary: The BioAPI reference implementation 
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://www.qrivy.net/~michael/blua/bioapi/%{name}-%{version}.tar.bz2
-Source1: http://www.qrivy.net/~michael/blua/bioapi/bioapi-errors.html
-Source2: fingerprint.rules
-Patch0: bioapi-c++.patch.bz2
-License: BSD
-Group: Sciences/Other 
-Url: http://www.qrivy.net/~michael/blua/bioapi/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Summary: 	The BioAPI reference implementation 
+Name: 		%{name}
+Version: 	%{version}
+Release: 	%{release}
+Source0: 	http://www.qrivy.net/~michael/blua/bioapi/%{name}-%{version}.tar.bz2
+Source1: 	http://www.qrivy.net/~michael/blua/bioapi/bioapi-errors.html
+Source2: 	fingerprint.rules
+Patch0: 	bioapi-c++.patch.bz2
+License: 	BSD
+Group: 		Sciences/Other 
+Url: 		http://www.qrivy.net/~michael/blua/bioapi/
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:       %{libname} = %{version}-%{release}, udev, qt3-common
-Buildrequires: qt3-devel
-
+BuildRequires: 	qt3-devel
+BuildRequires:	lsb-build-qt3-devel
 %description
 This package contains the BioAPI reference implementation for Unix-based
 platforms (in particular Linux and Solaris). The Unix-based reference
