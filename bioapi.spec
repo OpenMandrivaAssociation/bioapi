@@ -11,7 +11,7 @@ Release: 	%{release}
 Source0: 	http://www.qrivy.net/~michael/blua/bioapi/%{name}-%{version}.tar.bz2
 Source1: 	http://www.qrivy.net/~michael/blua/bioapi/bioapi-errors.html
 Source2: 	fingerprint.rules
-Patch0: 	bioapi-c++.patch.bz2
+Patch0: 	bioapi-c++.patch
 License: 	BSD
 Group: 		Sciences/Other 
 Url: 		http://www.qrivy.net/~michael/blua/bioapi/
