@@ -18,7 +18,6 @@ Url: 		http://www.qrivy.net/~michael/blua/bioapi/
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:       %{libname} = %{version}-%{release}, udev, qt3-common
 BuildRequires: 	qt3-devel
-BuildRequires:	lsb-build-qt3-devel
 %description
 This package contains the BioAPI reference implementation for Unix-based
 platforms (in particular Linux and Solaris). The Unix-based reference
@@ -56,7 +55,8 @@ This package contains the development files for bioapi
 cp %SOURCE1 .
 
 %build
-%configure 
+%configure2_5x \
+	--with-Qt-bin-dir=/usr/lib/qt3/bin/
 %make
 
 %install
