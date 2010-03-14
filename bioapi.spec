@@ -1,7 +1,7 @@
 %define name bioapi
 %define version 1.2.2
 %define release %mkrel 5
-%define major 1
+%define major 2
 %define libname %mklibname %name %{major}
 
 Summary: The BioAPI reference implementation 
