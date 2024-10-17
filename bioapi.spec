@@ -14,7 +14,7 @@ Source2: 	fingerprint.rules
 Patch0: 	bioapi-c++.patch
 License: 	BSD
 Group: 		Sciences/Other 
-Url: 		http://www.qrivy.net/~michael/blua/bioapi/
+Url: 		https://www.qrivy.net/~michael/blua/bioapi/
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:       %{libname} = %{version}-%{release}, udev, qt3-common
 BuildRequires: 	qt3-devel
