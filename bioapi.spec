@@ -17,6 +17,11 @@ Group: 		Sciences/Other
 Url: 		https://www.qrivy.net/~michael/blua/bioapi/
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:       %{libname} = %{version}-%{release}, udev, qt3-common
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: 	qt3-devel
 %description
 This package contains the BioAPI reference implementation for Unix-based
